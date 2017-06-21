@@ -4,7 +4,6 @@
 
 #include <Adafruit_ssd1306syp.h>                        // Adafruit oled library for display
 //Adafruit_ssd1306syp display(1,2);                       // OLED display (SDA to Pin 4), (SCL to Pin 5)
-Adafruit_ssd1306syp display(1,4);                       // OLED display (SDA to Pin 4), (SCL to Pin 5)
 
 static const int RXPin = 12, TXPin = 13;                // Ublox 6m GPS module to pins 12 and 13
 static const uint32_t GPSBaud = 9600;                   // Ublox GPS default Baud Rate is 9600
@@ -31,6 +30,8 @@ void setup()
   delay(1500);                                          // Pause 1.5 seconds  
   ss.begin(GPSBaud);                                    // Set Software Serial Comm Speed to 9600    
 }
+
+///i am adding this line for fun
 
 void loop()
 {   
